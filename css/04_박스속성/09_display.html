@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='ko'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Document</title>
+        <style>
+            #hello{
+                background: red;
+                width: 200px;
+                height: 100px;
+                display: inline;
+            }
+            .box{
+                display: inline;
+            }
+            #hello:hover {
+               display: inline-block;
+               background: lime;
+            }
+
+            .notice {
+                display: none;
+            }
+            
+            .notice:hover{
+                display: block;
+            }
+
+            .box input:nth-child(2n){
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <span id="hello">안녕하세요
+            <p class="notice">
+                이 메시지는, 마우스를 올려야만 보입니다.
+            </p>
+        </span>
+        <div class="box">
+            <input type="text" value="1">
+            <input type="text" value="2">
+            <input type="text" value="3">
+            <input type="text" value="4">
+            <input type="text" value="5">
+        </div>
+    </body>
+</html>
